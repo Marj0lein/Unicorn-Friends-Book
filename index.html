@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <title>HTML Forms</title>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div>
+      <h1>Unicorn Friendship Book</h1>
+      <p>Hello my friend! Would you like to fill in my online friendship book?</p>
+    </div>
+    <div><img width="200" height="200" src="unicorncropped.jpg" alt="Unicorn"></div>
+  </div>
+
+  <br>
+  <form action="">
+    <label for="">First Name</label>
+    <input class="textfield" type="text"></input>
+
+    <label for="">Last Name</label>
+    <input class="textfield" type="text"></input>
+
+    <br>
+    <label for="">E-mail</label>
+    <input class="textfield" type="email"></input>
+
+    <label for="">School</label>
+    <input class="textfield" type="text"></input>
+    <br><br>
+    <label for="avatar">My picture:</label>
+    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+    <br><br>
+    <label for="">Date of birth</label>
+    <input type="date"></input>
+    <br><br>
+    <label for="">Do you like school?</label>
+    <input type="radio" name="school" value="yes">
+    <label for="yes">Yes!!</label>
+    <input type="radio" name="school" value="no">
+    <label for="no">Nah ...</label>
+    <br>
+    <br>
+    <label for="">We know eachother from:</label>
+    <input class="textfield" type="text"></input>
+    <p>My favorite animals</p>
+    <input type="checkbox" value="Cats">
+    <label>🐱 Cats 🐱</label><br>
+    <input type="checkbox" value="Dogs">
+    <label>🐶 Dogs 🐶</label><br>
+    <input type="checkbox" value="Fish">
+    <label>🐟 Fish 🐟</label><br>
+    <input type="checkbox" value="Birds">
+    <label>🦜 Birds 🦜</label><br>
+    <input type="checkbox" value="Unicorns">
+    <label>🦄 Unicorns 🦄</label><br>
+    <br>
+    <label>My favorite color</label>
+    <input type="color" value="#5dbcd2">
+    <br><br>
+    <p>Do you like my unicorn friendship book?</p>
+    <div class="flex-container1">
+      <div class="mwah"><label>Mwah ...</label>
+      </div>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>
+      <div class="loveit">I love it!!!</div>
+    </div>
+    <br>
+    <label>My favorite website</label>
+    <input class="textfield" type="url" value="">
+    <br>
+    <label for="">My wish for you</label>
+    <br>
+ <textarea name="message" rows="10" cols="60" placeholder = "What I wish for you is ..."></textarea>
+    <br><br>
+    <input type="submit" value="Bewaren">
+  </form>
+</body>
+
+</html>
